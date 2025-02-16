@@ -1,0 +1,38 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#FF5722"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/white_border"> <!-- Contour blanc -->
+
+        <!-- Titre de l'événement -->
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom de l'événement"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" /> <!-- Texte blanc -->
+
+        <!-- Heure de l'événement (invisible au départ) -->
+        <TextView
+            android:id="@+id/eventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heure de l'événement"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:visibility="gone" /> <!-- Initialement invisible -->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

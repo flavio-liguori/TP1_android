@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre panier"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Bouton de retour -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        android:textColor="@android:color/white"
+        android:background="@color/backgroundColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/backgroundColor"
+        android:layout_gravity="bottom"
+        android:padding="8dp"
+        android:elevation="6dp">
+
+        <!-- Bouton de recherche -->
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:background="@drawable/input_background"
+            android:contentDescription="Recherche"
+            android:layout_marginEnd="4dp"
+            android:scaleType="centerInside"
+            android:padding="16dp" />
+
+        <!-- Bouton du panier -->
+        <ImageButton
+            android:id="@+id/fabCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/basket"
+            android:background="@drawable/input_background"
+            android:contentDescription="Panier"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:scaleType="centerInside"
+            android:padding="16dp" />
+
+        <!-- Bouton du compte -->
+        <ImageButton
+            android:id="@+id/accountButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/profil"
+            android:background="@drawable/input_background"
+            android:contentDescription="Compte"
+            android:layout_marginStart="4dp"
+            android:scaleType="centerInside"
+            android:padding="16dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/backgroundColor"
+    app:strokeColor="@android:color/white"
+    app:strokeWidth="2dp"
+    android:id="@+id/cardView"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Ligne avec heure de départ à gauche et ville de départ à droite -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/departureTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:00"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/departureCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paris"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Type de train dynamique (ex: TGV) -->
+                <TextView
+                    android:id="@+id/trainType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!-- Ligne avec heure d'arrivée à gauche et ville d'arrivée à droite -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/arrivalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:30"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/arrivalCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lyon"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Ligne de séparation -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white" />
+
+        <!-- Conteneur pour le prix aligné à droite -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Temps de trajet -->
+            <TextView
+                android:id="@+id/travelTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2h 30min"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="@android:color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"/> <!-- Temps de trajet affiché ici -->
+
+            <!-- Prix aligné à droite -->
+            <TextView
+                android:id="@+id/trainPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€50.00"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp" /> <!-- Prix affiché ici -->
+        </RelativeLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

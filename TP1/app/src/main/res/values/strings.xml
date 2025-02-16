@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="label_name">Nom</string>
+    <string name="label_firstname">Prenom</string>
+    <string name="label_age">Age</string>
+    <string name="label_domain">Domaine de compétences</string>
+    <string name="label_etudiant">Etudiant</string>
+    <string name="label_num">Numéro de téléphone</string>
+    <string name="label_valider">Valider</string>
+
+
+
+</resources>

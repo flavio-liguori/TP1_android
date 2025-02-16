@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <!-- Remplace ce thème par un thème MaterialComponents -->
+        <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+            <item name="colorPrimary">@color/backgroundColor</item> <!-- Couleur de fond des boutons -->
+            <!-- Personnalise ton thème ici -->
+        </style>
+    </resources>
+

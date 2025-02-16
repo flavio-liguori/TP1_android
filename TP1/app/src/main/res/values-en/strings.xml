@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="label_name">Name</string>
+    <string name="label_firstname">First Name</string>
+    <string name="label_age">Age</string>
+    <string name="label_domain">Field of Expertise</string>
+    <string name="label_etudiant">Student</string>
+    <string name="label_num">Phone Number</string>
+    <string name="label_valider">Validate</string>
+
+
+</resources>

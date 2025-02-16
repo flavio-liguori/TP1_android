@@ -1,0 +1,15 @@
+<!-- res/drawable/rounded_white_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Couleur de fond -->
+    <solid android:color="@color/backgroundColor" />
+
+    <!-- Bordure blanche de 2dp -->
+    <stroke
+        android:width="2dp"
+        android:color="@android:color/white" />
+
+    <!-- Coins arrondis avec un rayon de 12dp -->
+    <corners android:radius="12dp" />
+    <solid android:color="@android:color/transparent" />
+
+</shape>

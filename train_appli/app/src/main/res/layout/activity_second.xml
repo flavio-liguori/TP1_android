@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Espace au-dessus du TextView -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <!-- Titre de la page -->
+        <TextView
+            android:id="@+id/trainListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liste des Trains"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:padding="8dp"
+            android:background="@drawable/rounder_border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
+
+            <Button
+                android:id="@+id/filterTGVButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="TGV"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@drawable/input_background"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/filterTERButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="TER"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@drawable/input_background"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:title="Liste des Trains"
+            android:titleTextColor="@android:color/white"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/trainRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Barre de tâches en bas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/backgroundColor"
+        android:layout_gravity="bottom"
+        android:padding="8dp"
+        android:elevation="6dp">
+
+        <!-- Bouton de recherche -->
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+        android:background="@drawable/input_background"
+        android:contentDescription="Recherche"
+        android:layout_marginEnd="4dp"
+        android:scaleType="centerInside"
+        android:padding="16dp" />
+
+        <!-- Bouton du panier -->
+        <ImageButton
+            android:id="@+id/fabCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/basket"
+        android:background="@drawable/input_background"
+        android:contentDescription="Panier"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:scaleType="centerInside"
+        android:padding="16dp" />
+
+        <!-- Bouton du compte -->
+        <ImageButton
+            android:id="@+id/accountButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/profil"
+        android:background="@drawable/input_background"
+        android:contentDescription="Compte"
+        android:layout_marginStart="4dp"
+        android:scaleType="centerInside"
+        android:padding="16dp" />
+    </LinearLayout>
+</FrameLayout>

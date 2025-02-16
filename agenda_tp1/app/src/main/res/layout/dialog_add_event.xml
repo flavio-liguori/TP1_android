@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Champ pour la description de l'événement -->
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description de l'événement"
+        android:inputType="text" />
+
+    <!-- Champ pour afficher l'heure sélectionnée -->
+    <TextView
+        android:id="@+id/selectedTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Heure sélectionnée :"
+        android:paddingTop="16dp"
+        android:textSize="16sp" />
+
+    <!-- Bouton pour ouvrir le Time Picker -->
+    <Button
+        android:id="@+id/selectTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisir l'heure"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
